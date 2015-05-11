@@ -77,8 +77,6 @@
         [transitionContext completeTransition:YES];
     }];
     
-    
-    
 }
 
 @end
