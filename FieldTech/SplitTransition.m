@@ -19,23 +19,41 @@
 
 // 具体的转场动画实现代码在这里
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext{
-    //  1.  拿到目标 viewController
+    
+    //  1.  拿到各种 view
+    UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+    UIView *fromView = fromVC.view;
+    
     UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    UIView *toView = toVC.view;
     
-    //  2.  创建一个目标 viewController 的截图，并让它先是全透明状态（即不可见）
-    UIView *toViewSnapshot = [toVC.view snapshotViewAfterScreenUpdates:YES];
-    toViewSnapshot.alpha = 0.0;
-    
-    //  3.  将这个截图放入动画的容器中，即 container view
     UIView *container = [transitionContext containerView];
-    [container addSubview:toViewSnapshot];
     
-    //  4.  开始动画，简单地渐隐渐现效果
+    //  2.  创建各种切割截图，用来完成切割动画
+    CGRect topHalf, bottomHalf;
+    CGRectDivide(fromView.bounds, &topHalf, &bottomHalf, fromView.bounds.size.height / 2.0, CGRectMinYEdge);
+    
+    UIView *topHalfView = [fromView resizableSnapshotViewFromRect:topHalf
+                                               afterScreenUpdates:NO
+                                                    withCapInsets:UIEdgeInsetsZero];
+    UIView *bottomHalfView = [fromView resizableSnapshotViewFromRect:bottomHalf
+                                                  afterScreenUpdates:NO
+                                                       withCapInsets:UIEdgeInsetsZero];
+    bottomHalfView.frame = bottomHalf;// 重设这个frame，不然会和上面的view重叠
+    
+    //  3. 将各种截图和目标view加入动画容器中
+    [container addSubview:toView];
+    [container addSubview:topHalfView];
+    [container addSubview:bottomHalfView];
+    
+    //  4. 开始动画，上下切割的转场效果，不知道怎么形容 :[
     [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
-        toViewSnapshot.alpha = 1.0;
+        topHalfView.center = CGPointMake(-topHalfView.center.x, topHalfView.center.y);
+        bottomHalfView.center = CGPointMake(bottomHalfView.center.x + bottomHalf.size.width, bottomHalfView.center.y);
     } completion:^(BOOL finished) {
-        [toViewSnapshot removeFromSuperview];
-        [container addSubview:toVC.view];
+        [topHalfView removeFromSuperview];
+        [bottomHalfView removeFromSuperview];
+        
         [transitionContext completeTransition:YES];
     }];
 }
