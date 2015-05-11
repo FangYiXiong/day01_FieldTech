@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B833D60F18CD590400AAC7E8 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B833D60E18CD590400AAC7E8 /* TableViewController.m */; };
+		B8CF58B718C3052B00D7DFED /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CF58B618C3052B00D7DFED /* ThirdViewController.m */; };
+		B8CF58BA18C3054100D7DFED /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CF58B918C3054100D7DFED /* ModalViewController.m */; };
+		CE9D8C351879BEB400B2CF4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D8C341879BEB400B2CF4C /* Foundation.framework */; };
+		CE9D8C371879BEB400B2CF4C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D8C361879BEB400B2CF4C /* CoreGraphics.framework */; };
+		CE9D8C391879BEB400B2CF4C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D8C381879BEB400B2CF4C /* UIKit.framework */; };
+		CE9D8C3F1879BEB400B2CF4C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE9D8C3D1879BEB400B2CF4C /* InfoPlist.strings */; };
+		CE9D8C411879BEB400B2CF4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D8C401879BEB400B2CF4C /* main.m */; };
+		CE9D8C451879BEB400B2CF4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D8C441879BEB400B2CF4C /* AppDelegate.m */; };
+		CE9D8C481879BEB400B2CF4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9D8C461879BEB400B2CF4C /* Main.storyboard */; };
+		CE9D8C4B1879BEB400B2CF4C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D8C4A1879BEB400B2CF4C /* FirstViewController.m */; };
+		CE9D8C4E1879BEB400B2CF4C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D8C4D1879BEB400B2CF4C /* SecondViewController.m */; };
+		CE9D8C501879BEB400B2CF4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9D8C4F1879BEB400B2CF4C /* Images.xcassets */; };
+		CE9D8C571879BEB400B2CF4C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D8C561879BEB400B2CF4C /* XCTest.framework */; };
+		CE9D8C581879BEB400B2CF4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D8C341879BEB400B2CF4C /* Foundation.framework */; };
+		CE9D8C591879BEB400B2CF4C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D8C381879BEB400B2CF4C /* UIKit.framework */; };
+		CE9D8C611879BEB400B2CF4C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE9D8C5F1879BEB400B2CF4C /* InfoPlist.strings */; };
+		CE9D8C631879BEB400B2CF4C /* FieldTechTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D8C621879BEB400B2CF4C /* FieldTechTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE9D8C5A1879BEB400B2CF4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE9D8C291879BEB400B2CF4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE9D8C301879BEB400B2CF4C;
+			remoteInfo = FieldTech;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B833D60D18CD590400AAC7E8 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		B833D60E18CD590400AAC7E8 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		B8CF58B518C3052B00D7DFED /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		B8CF58B618C3052B00D7DFED /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		B8CF58B818C3054100D7DFED /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		B8CF58B918C3054100D7DFED /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		CE9D8C311879BEB400B2CF4C /* FieldTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FieldTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9D8C341879BEB400B2CF4C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE9D8C361879BEB400B2CF4C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE9D8C381879BEB400B2CF4C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CE9D8C3C1879BEB400B2CF4C /* FieldTech-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FieldTech-Info.plist"; sourceTree = "<group>"; };
+		CE9D8C3E1879BEB400B2CF4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE9D8C401879BEB400B2CF4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE9D8C421879BEB400B2CF4C /* FieldTech-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FieldTech-Prefix.pch"; sourceTree = "<group>"; };
+		CE9D8C431879BEB400B2CF4C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE9D8C441879BEB400B2CF4C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE9D8C471879BEB400B2CF4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE9D8C491879BEB400B2CF4C /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		CE9D8C4A1879BEB400B2CF4C /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		CE9D8C4C1879BEB400B2CF4C /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		CE9D8C4D1879BEB400B2CF4C /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		CE9D8C4F1879BEB400B2CF4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CE9D8C551879BEB400B2CF4C /* FieldTechTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FieldTechTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9D8C561879BEB400B2CF4C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CE9D8C5E1879BEB400B2CF4C /* FieldTechTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FieldTechTests-Info.plist"; sourceTree = "<group>"; };
+		CE9D8C601879BEB400B2CF4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE9D8C621879BEB400B2CF4C /* FieldTechTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FieldTechTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE9D8C2E1879BEB400B2CF4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9D8C371879BEB400B2CF4C /* CoreGraphics.framework in Frameworks */,
+				CE9D8C391879BEB400B2CF4C /* UIKit.framework in Frameworks */,
+				CE9D8C351879BEB400B2CF4C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9D8C521879BEB400B2CF4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9D8C571879BEB400B2CF4C /* XCTest.framework in Frameworks */,
+				CE9D8C591879BEB400B2CF4C /* UIKit.framework in Frameworks */,
+				CE9D8C581879BEB400B2CF4C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6CA770C1A705DFD00253328 /* Top Level */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D8C431879BEB400B2CF4C /* AppDelegate.h */,
+				CE9D8C441879BEB400B2CF4C /* AppDelegate.m */,
+			);
+			name = "Top Level";
+			sourceTree = "<group>";
+		};
+		A6CA770D1A705E4100253328 /* User Story */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D8C461879BEB400B2CF4C /* Main.storyboard */,
+				CE9D8C491879BEB400B2CF4C /* FirstViewController.h */,
+				CE9D8C4A1879BEB400B2CF4C /* FirstViewController.m */,
+				CE9D8C4C1879BEB400B2CF4C /* SecondViewController.h */,
+				CE9D8C4D1879BEB400B2CF4C /* SecondViewController.m */,
+				B8CF58B518C3052B00D7DFED /* ThirdViewController.h */,
+				B8CF58B618C3052B00D7DFED /* ThirdViewController.m */,
+				B8CF58B818C3054100D7DFED /* ModalViewController.h */,
+				B8CF58B918C3054100D7DFED /* ModalViewController.m */,
+				B833D60D18CD590400AAC7E8 /* TableViewController.h */,
+				B833D60E18CD590400AAC7E8 /* TableViewController.m */,
+			);
+			name = "User Story";
+			sourceTree = "<group>";
+		};
+		CE9D8C281879BEB400B2CF4C = {
+			isa = PBXGroup;
+			children = (
+				CE9D8C3A1879BEB400B2CF4C /* FieldTech */,
+				CE9D8C5C1879BEB400B2CF4C /* FieldTechTests */,
+				CE9D8C331879BEB400B2CF4C /* Frameworks */,
+				CE9D8C321879BEB400B2CF4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE9D8C321879BEB400B2CF4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D8C311879BEB400B2CF4C /* FieldTech.app */,
+				CE9D8C551879BEB400B2CF4C /* FieldTechTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE9D8C331879BEB400B2CF4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D8C341879BEB400B2CF4C /* Foundation.framework */,
+				CE9D8C361879BEB400B2CF4C /* CoreGraphics.framework */,
+				CE9D8C381879BEB400B2CF4C /* UIKit.framework */,
+				CE9D8C561879BEB400B2CF4C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE9D8C3A1879BEB400B2CF4C /* FieldTech */ = {
+			isa = PBXGroup;
+			children = (
+				A6CA770C1A705DFD00253328 /* Top Level */,
+				A6CA770D1A705E4100253328 /* User Story */,
+				CE9D8C4F1879BEB400B2CF4C /* Images.xcassets */,
+				CE9D8C3B1879BEB400B2CF4C /* Supporting Files */,
+			);
+			path = FieldTech;
+			sourceTree = "<group>";
+		};
+		CE9D8C3B1879BEB400B2CF4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D8C3C1879BEB400B2CF4C /* FieldTech-Info.plist */,
+				CE9D8C3D1879BEB400B2CF4C /* InfoPlist.strings */,
+				CE9D8C401879BEB400B2CF4C /* main.m */,
+				CE9D8C421879BEB400B2CF4C /* FieldTech-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE9D8C5C1879BEB400B2CF4C /* FieldTechTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D8C621879BEB400B2CF4C /* FieldTechTests.m */,
+				CE9D8C5D1879BEB400B2CF4C /* Supporting Files */,
+			);
+			path = FieldTechTests;
+			sourceTree = "<group>";
+		};
+		CE9D8C5D1879BEB400B2CF4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D8C5E1879BEB400B2CF4C /* FieldTechTests-Info.plist */,
+				CE9D8C5F1879BEB400B2CF4C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE9D8C301879BEB400B2CF4C /* FieldTech */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9D8C661879BEB400B2CF4C /* Build configuration list for PBXNativeTarget "FieldTech" */;
+			buildPhases = (
+				CE9D8C2D1879BEB400B2CF4C /* Sources */,
+				CE9D8C2E1879BEB400B2CF4C /* Frameworks */,
+				CE9D8C2F1879BEB400B2CF4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FieldTech;
+			productName = FieldTech;
+			productReference = CE9D8C311879BEB400B2CF4C /* FieldTech.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE9D8C541879BEB400B2CF4C /* FieldTechTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9D8C691879BEB400B2CF4C /* Build configuration list for PBXNativeTarget "FieldTechTests" */;
+			buildPhases = (
+				CE9D8C511879BEB400B2CF4C /* Sources */,
+				CE9D8C521879BEB400B2CF4C /* Frameworks */,
+				CE9D8C531879BEB400B2CF4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE9D8C5B1879BEB400B2CF4C /* PBXTargetDependency */,
+			);
+			name = FieldTechTests;
+			productName = FieldTechTests;
+			productReference = CE9D8C551879BEB400B2CF4C /* FieldTechTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE9D8C291879BEB400B2CF4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BNR;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Jonathan Blocksom";
+				TargetAttributes = {
+					CE9D8C541879BEB400B2CF4C = {
+						TestTargetID = CE9D8C301879BEB400B2CF4C;
+					};
+				};
+			};
+			buildConfigurationList = CE9D8C2C1879BEB400B2CF4C /* Build configuration list for PBXProject "FieldTech" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE9D8C281879BEB400B2CF4C;
+			productRefGroup = CE9D8C321879BEB400B2CF4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE9D8C301879BEB400B2CF4C /* FieldTech */,
+				CE9D8C541879BEB400B2CF4C /* FieldTechTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE9D8C2F1879BEB400B2CF4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9D8C501879BEB400B2CF4C /* Images.xcassets in Resources */,
+				CE9D8C3F1879BEB400B2CF4C /* InfoPlist.strings in Resources */,
+				CE9D8C481879BEB400B2CF4C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9D8C531879BEB400B2CF4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9D8C611879BEB400B2CF4C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE9D8C2D1879BEB400B2CF4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8CF58B718C3052B00D7DFED /* ThirdViewController.m in Sources */,
+				CE9D8C411879BEB400B2CF4C /* main.m in Sources */,
+				CE9D8C4E1879BEB400B2CF4C /* SecondViewController.m in Sources */,
+				B833D60F18CD590400AAC7E8 /* TableViewController.m in Sources */,
+				CE9D8C4B1879BEB400B2CF4C /* FirstViewController.m in Sources */,
+				CE9D8C451879BEB400B2CF4C /* AppDelegate.m in Sources */,
+				B8CF58BA18C3054100D7DFED /* ModalViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9D8C511879BEB400B2CF4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9D8C631879BEB400B2CF4C /* FieldTechTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE9D8C5B1879BEB400B2CF4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE9D8C301879BEB400B2CF4C /* FieldTech */;
+			targetProxy = CE9D8C5A1879BEB400B2CF4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE9D8C3D1879BEB400B2CF4C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE9D8C3E1879BEB400B2CF4C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE9D8C461879BEB400B2CF4C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE9D8C471879BEB400B2CF4C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE9D8C5F1879BEB400B2CF4C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE9D8C601879BEB400B2CF4C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE9D8C641879BEB400B2CF4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CE9D8C651879BEB400B2CF4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE9D8C671879BEB400B2CF4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FieldTech/FieldTech-Prefix.pch";
+				INFOPLIST_FILE = "FieldTech/FieldTech-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE9D8C681879BEB400B2CF4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FieldTech/FieldTech-Prefix.pch";
+				INFOPLIST_FILE = "FieldTech/FieldTech-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CE9D8C6A1879BEB400B2CF4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FieldTech.app/FieldTech";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FieldTech/FieldTech-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FieldTechTests/FieldTechTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CE9D8C6B1879BEB400B2CF4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FieldTech.app/FieldTech";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FieldTech/FieldTech-Prefix.pch";
+				INFOPLIST_FILE = "FieldTechTests/FieldTechTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE9D8C2C1879BEB400B2CF4C /* Build configuration list for PBXProject "FieldTech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9D8C641879BEB400B2CF4C /* Debug */,
+				CE9D8C651879BEB400B2CF4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE9D8C661879BEB400B2CF4C /* Build configuration list for PBXNativeTarget "FieldTech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9D8C671879BEB400B2CF4C /* Debug */,
+				CE9D8C681879BEB400B2CF4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE9D8C691879BEB400B2CF4C /* Build configuration list for PBXNativeTarget "FieldTechTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9D8C6A1879BEB400B2CF4C /* Debug */,
+				CE9D8C6B1879BEB400B2CF4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE9D8C291879BEB400B2CF4C /* Project object */;
+}
