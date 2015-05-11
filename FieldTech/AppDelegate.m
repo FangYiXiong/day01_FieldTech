@@ -4,6 +4,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SplitTransition.h"
 
 @implementation AppDelegate
 
@@ -47,7 +48,9 @@
                                                fromViewController:(UIViewController *)fromVC
                                                  toViewController:(UIViewController *)toVC{
     NSLog(@"要求返回一个动画控制器 Animation Controller");
-    return self;
+    //  返回新创建的 SplitTransition 这个类的一个对象，这时重新运行，效果应该是一样的。
+    SplitTransition *animationController = [SplitTransition new];
+    return animationController;
 }
 
 #pragma mark - UIViewControllerAnimatedTransitioning

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32F321891B0118A4005F9D5F /* SplitTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F321881B0118A4005F9D5F /* SplitTransition.m */; };
 		B833D60F18CD590400AAC7E8 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B833D60E18CD590400AAC7E8 /* TableViewController.m */; };
 		B8CF58B718C3052B00D7DFED /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CF58B618C3052B00D7DFED /* ThirdViewController.m */; };
 		B8CF58BA18C3054100D7DFED /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CF58B918C3054100D7DFED /* ModalViewController.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32F321871B0118A4005F9D5F /* SplitTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplitTransition.h; sourceTree = "<group>"; };
+		32F321881B0118A4005F9D5F /* SplitTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplitTransition.m; sourceTree = "<group>"; };
 		B833D60D18CD590400AAC7E8 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		B833D60E18CD590400AAC7E8 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		B8CF58B518C3052B00D7DFED /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
@@ -96,6 +99,8 @@
 			children = (
 				CE9D8C431879BEB400B2CF4C /* AppDelegate.h */,
 				CE9D8C441879BEB400B2CF4C /* AppDelegate.m */,
+				32F321871B0118A4005F9D5F /* SplitTransition.h */,
+				32F321881B0118A4005F9D5F /* SplitTransition.m */,
 			);
 			name = "Top Level";
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 				B8CF58B718C3052B00D7DFED /* ThirdViewController.m in Sources */,
 				CE9D8C411879BEB400B2CF4C /* main.m in Sources */,
 				CE9D8C4E1879BEB400B2CF4C /* SecondViewController.m in Sources */,
+				32F321891B0118A4005F9D5F /* SplitTransition.m in Sources */,
 				B833D60F18CD590400AAC7E8 /* TableViewController.m in Sources */,
 				CE9D8C4B1879BEB400B2CF4C /* FirstViewController.m in Sources */,
 				CE9D8C451879BEB400B2CF4C /* AppDelegate.m in Sources */,
