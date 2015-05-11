@@ -39,13 +39,15 @@
     UIView *bottomHalfView = [fromView resizableSnapshotViewFromRect:bottomHalf
                                                   afterScreenUpdates:NO
                                                        withCapInsets:UIEdgeInsetsZero];
-    bottomHalfView.frame = bottomHalf;// 重设这个frame，不然会和上面的view重叠
+    bottomHalfView.frame = bottomHalf;// 重设这个frame，不然会和上面的view重叠。因为原点都是(0,0)
     
     //  3. 将各种截图和目标view加入动画容器中
     [container addSubview:toView];
     [container addSubview:topHalfView];
     [container addSubview:bottomHalfView];
     
+    
+    /**********************************************
     //  4. 开始动画，上下切割的转场效果，不知道怎么形容 :[
     [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
         topHalfView.center = CGPointMake(-topHalfView.center.x, topHalfView.center.y);
@@ -56,6 +58,27 @@
         
         [transitionContext completeTransition:YES];
     }];
+     **********************************************/
+    
+    //  4. 改用关键帧的方式创建动画 Key Frame，效果是切割后先水平分离再竖直分离。
+    
+    [UIView animateKeyframesWithDuration:1.0 delay:0.0 options:0 animations:^{
+        [UIView addKeyframeWithRelativeStartTime:0.0 relativeDuration:0.5 animations:^{
+            topHalfView.center = CGPointMake(0.0, topHalfView.center.y);
+            bottomHalfView.center = CGPointMake(bottomHalf.size.width, bottomHalfView.center.y);
+        }];
+        [UIView addKeyframeWithRelativeStartTime:0.5 relativeDuration:0.5 animations:^{
+            topHalfView.center = CGPointMake(0.0, container.bounds.size.height + topHalf.size.height / 2.0);
+            bottomHalfView.center = CGPointMake(bottomHalf.size.width, -bottomHalf.size.height / 2.0);
+        }];
+    } completion:^(BOOL finished) {
+        [topHalfView removeFromSuperview];
+        [bottomHalfView removeFromSuperview];
+        [transitionContext completeTransition:YES];
+    }];
+    
+    
+    
 }
 
 @end
